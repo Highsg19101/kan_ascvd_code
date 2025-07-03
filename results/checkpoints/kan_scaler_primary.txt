@@ -1,0 +1,23 @@
+'SEX_TYPE_org','AGE','G1E_BP_SYS','SMK','G1E_LDL','HTN_med','DM'
+
+scaler.mean_
+[4.78792756e-01, 4.89631428e+01, 1.22130344e+02, 2.48758871e-01,
+       1.96948423e+02, 5.48119520e+01, 1.51642779e-01, 4.47910796e-02]
+       
+scaler.scale_
+[ 0.49955005, 11.75261791, 15.16975104,  0.43229376, 35.16616376,
+       13.21906134,  0.35867429,  0.20684496]
+
+
+
+
+  const scaled = {
+    sex: normalize(+inputs.sex, 4.78792756e-01, 0.49955005),
+    smk: normalize(+inputs.smk, 2.48758871e-01, 0.43229376),
+    diabetes: normalize(+inputs.diabetes, 4.47910796e-02, 0.20684496),
+    htn: normalize(+inputs.htn, 1.51642779e-0, 0.35867429),
+    age: normalize(inputs.age, 4.89631428e+01, 11.75261791),
+    sysbp: normalize(inputs.sysbp, 1.22130344e+02, 15.16975104),
+    totchole: normalize(inputs.totchole, 1.96948423e+02, 35.16616376),
+    hdlchole: normalize(inputs.hdlchole, 5.48119520e+01, 13.21906134)
+  };

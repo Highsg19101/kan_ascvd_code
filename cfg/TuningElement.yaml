@@ -1,0 +1,60 @@
+MLPPrimaryTuneElement:
+    LearningRate: [1e-2,1e-3,1e-4,1e-5]
+    Layers: [
+            [8],[8,8],[8,8,8],
+            [16],[16,16], [16,16,16],
+            [22],[22,22],[22,22,22],
+            [32],[32,32],[32,32,32]
+            ]
+    DropRate: [
+                [0.1, 0.2]
+              ]
+    Patience: 50
+    MaxEpoch: 5000
+
+
+KANPrimaryTuneElement:
+    LearningRate: [1e-2,1e-3,1e-4,1e-5]
+    Layers: [
+            [8,2],[8,2,2],[8,2,2,2],
+            [8,4],[8,4,4],[8,4,4,4],
+            [8,8],[8,8,8],[8,8,8,8],
+            [8,16],[8,16,16],[8,16,16,16]
+            ]
+    Orders: [3]
+    Grids: [3]
+    Lambdas: [1e-2,1e-3,1e-4]
+    LambdaEntropy: [1., 2.]
+    MaxStep: 5000
+
+MLPExtendTuneElement:
+    LearningRate: [1e-2,1e-3,1e-4,1e-5]
+    Layers: [
+            [8],[8,8],[8,8,8],
+            [16],[16,16], [16,16,16],
+            [22],[22,22],[22,22,22],
+            [32],[32,32],[32,32,32]
+            ]
+    DropRate: [
+                [0.1, 0.2]
+              ]
+    Patience: 50
+    MaxEpoch: 5000
+
+KANExtendTuneElement:
+    LearningRate: [1e-2,1e-3,1e-4,1e-5]
+    Layers: [
+            [8,2],[8,2,2],[8,2,2,2],
+            [8,4],[8,4,4],[8,4,4,4],
+            [8,8],[8,8,8],[8,8,8,8],
+            [8,16],[8,16,16],[8,16,16,16]
+            ]
+    Orders: [3]
+    Grids: [3]
+    Lambdas: [1e-2,1e-3,1e-4]
+    LambdaEntropy: [1., 2.]
+    MaxStep: 5000
+
+
+
+

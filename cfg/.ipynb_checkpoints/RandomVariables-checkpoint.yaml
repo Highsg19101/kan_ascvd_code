@@ -1,0 +1,17 @@
+PRIMARY:
+    [
+    'INDI_DSCM_NO','HME_DT','ASCVD',
+    'SEX_TYPE_org','AGE','G1E_BP_SYS','SMK','G1E_TOT_CHOL','G1E_HDL','HTN_med','DM'
+    ]
+
+EXTEND: # maximum info
+    ['INDI_DSCM_NO','HME_DT','ASCVD',
+   'SEX_TYPE_org','AGE','G1E_BMI','G1E_BP_SYS','G1E_HDL','G1E_TOT_CHOL','SMK','DM','HTN_med',
+   'G1E_BP_DIA','G1E_URN_PROT','G1E_TG',
+   'G1E_HGB','G1E_SGOT','G1E_SGPT','G1E_GGT','G1E_FBS',
+   'G1E_LDL','G1E_WSTC','G1E_GFR', 'CALC_CTRB_VTILE_FD','RVSN_ADDR_CD'
+   ]
+
+
+
+
